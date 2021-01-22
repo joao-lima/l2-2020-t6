@@ -72,17 +72,6 @@ TEST_CASE("Caso 1") {
     a.destroi();
 }
 
-TEST_CASE("Caso 2") {
-    Arvore<int> a;
-    std::list<int> entrada {1, 2, 4, 5, 3};
-    std::list<int> saida;
-    std::list<int> resultado {4, 5, 2, 3, 1};
-    a.inicia(entrada);
-    a.posOrdem(saida);
-    REQUIRE(saida == resultado);
-    a.destroi();
-}
-
 TEST_CASE("Caso 3") {
     Arvore<char> a;
     std::list<char> entrada {'F', 'C', 'A', 'D', 'J', 'H', 'I', 'K'};
